@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hyperband-sampler"
+version = "0.1.0"
+description = "A Hyperband sampler implementation for Optuna with multi-objective support"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "megemann", email = "your.email@example.com"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "optuna>=3.0.0",
+    "numpy>=1.19.0",
+    "matplotlib>=3.3.0",
+    "tqdm>=4.50.0",
+]
+
+[project.optional-dependencies]
+torch = ["torch>=1.7.0"]
+ml = ["scikit-learn>=0.24.0"]
+all = ["torch>=1.7.0", "scikit-learn>=0.24.0"]
+dev = [
+    "pytest>=6.0.0",
+    "pytest-cov>=2.0.0",
+    "black>=21.0.0",
+    "isort>=5.0.0",
+    "flake8>=3.8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/megemann/Hyperband_sampler"
+Repository = "https://github.com/megemann/Hyperband_sampler.git"
+Documentation = "https://github.com/megemann/Hyperband_sampler"
+Issues = "https://github.com/megemann/Hyperband_sampler/issues"
+
+[tool.setuptools.packages.find]
+include = ["hyperband_sampler*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+line_length = 88 

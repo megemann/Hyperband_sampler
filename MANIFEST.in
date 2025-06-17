@@ -1,0 +1,10 @@
+include README.md
+include LICENSE
+include pyproject.toml
+include hyperband_sampler/requirements.txt
+recursive-include hyperband_sampler *.py
+recursive-include docs *
+exclude hyperband_sampler/__pycache__/*
+exclude hyperband_sampler/test_*.py
+global-exclude *.pyc
+global-exclude __pycache__/* 
