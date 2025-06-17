@@ -1,0 +1,6 @@
+optuna>=3.0.0
+numpy>=1.19.0
+matplotlib>=3.3.0
+torch>=1.7.0  # Only needed for neural network example
+scikit-learn>=0.24.0  # For data processing
+tqdm>=4.50.0  # For progress bars 
