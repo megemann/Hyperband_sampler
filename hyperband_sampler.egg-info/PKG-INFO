@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: hyperband-sampler
+Version: 0.1.0
+Summary: A Hyperband sampler implementation for Optuna with multi-objective support
+Author-email: megemann <your.email@example.com>
+Project-URL: Homepage, https://github.com/megemann/Hyperband_sampler
+Project-URL: Repository, https://github.com/megemann/Hyperband_sampler.git
+Project-URL: Documentation, https://github.com/megemann/Hyperband_sampler
+Project-URL: Issues, https://github.com/megemann/Hyperband_sampler/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: optuna>=3.0.0
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: matplotlib>=3.3.0
+Requires-Dist: tqdm>=4.50.0
+Provides-Extra: torch
+Requires-Dist: torch>=1.7.0; extra == "torch"
+Provides-Extra: ml
+Requires-Dist: scikit-learn>=0.24.0; extra == "ml"
+Provides-Extra: all
+Requires-Dist: torch>=1.7.0; extra == "all"
+Requires-Dist: scikit-learn>=0.24.0; extra == "all"
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.0.0; extra == "dev"
+Requires-Dist: black>=21.0.0; extra == "dev"
+Requires-Dist: isort>=5.0.0; extra == "dev"
+Requires-Dist: flake8>=3.8.0; extra == "dev"
