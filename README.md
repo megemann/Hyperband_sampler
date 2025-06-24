@@ -46,12 +46,12 @@ To provide some scaling support, we enabled parallelization through independent 
 - Optuna >= 3.0.0
 - NumPy, scikit-learn (for examples)
 
-### Installation Methods
+### Installation Method
 
 #### From Source (Recommended)
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/hyperband_sampler.git
+git clone https://github.com/megemann/Hyperband_sampler.git
 cd hyperband_sampler
 
 # Install in development mode
@@ -63,7 +63,7 @@ pip install .
 
 #### Direct Installation from GitHub
 ```bash
-pip install git+https://github.com/yourusername/hyperband_sampler.git
+pip install git+https://github.com/megemann/Hyperband_sampler.git
 ```
 
 ### Verify Installation
@@ -388,14 +388,6 @@ Each Hyperband iteration runs independently with its own model instances. Memory
 study = HyperbandStudy(hyperband_iterations=4, ...)
 study.optimize(objective, n_jobs=4)  # or n_jobs=-1 for max cores
 ```
-
-This gives practical information about:
-- **Why threading** (GPU compatibility)
-- **Memory considerations** (scaling behavior)
-- **How parallelization works** (across iterations, not trials)
-- **Usage example** (concrete code)
-
-Much more useful than generic bullet points!
 
 ## Testing
 
