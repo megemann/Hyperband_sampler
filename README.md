@@ -167,8 +167,8 @@ for i, trial in enumerate(study.best_trials[:3]):
 
 ## API Reference
 
-### `Hyperband Sampler`
-*hyperband_sampler(min_resource: int, max_resource: int, reduction_factor: int = 3, seed: int = 42)*
+### `HyperbandSampler`
+*HyperbandSampler(min_resource: int, max_resource: int, reduction_factor: int = 3, seed: int = 42)*
 
 #### parameters
 - `min_resource` (int)
