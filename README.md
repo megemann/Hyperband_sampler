@@ -8,7 +8,7 @@ The **Hyperband Algorithm** is a widely used **multi-fidelity** search strategy 
 Hyperband achieves this by creating tournament-style brackets, where each bracket is has an aggressive, conservative, or balanced approach. At each rung, the top preforming trial(s) get promoted and the algorithm allocates more resources in training those to completion. 
 
 > For a more detailed explanation of Hyperband, please refer to the following references
->- **[My Blog Post on Hyperband Implementation](your-blog-url)** (coming soon)
+>- **[My Blog Post on Hyperband Implementation](https://medium.com/@ajfairbanks2005/i-ditched-keras-tuner-and-built-my-own-hyperband-sampler-for-pytorch-a29686e6f925)**
 >- Original research paper: [Hyperband: A Novel Bandit-Based Approach](https://arxiv.org/abs/1603.06560)
 >- Internal documentation: `docs/HP_Optimization_Manual.pdf` 
 
